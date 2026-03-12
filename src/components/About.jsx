@@ -1,58 +1,91 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { User, Code, Briefcase, Info } from 'lucide-react'
 
 const About = () => {
     return (
-        <section id="about" className="py-24 bg-black">
+        <section id="about" className="py-24 bg-black border-t-2 border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid md:grid-cols-2 gap-16 items-center">
+                <div className="flex flex-col lg:flex-row gap-16 items-stretch">
+                    
+                    {/* Left Side: Photo/Graphic Box */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
+                        className="lg:w-1/3 flex"
                     >
-                        <h2 className="text-sm font-bold tracking-widest uppercase text-accent mb-4">About Me</h2>
-                        <h3 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-white">
-                            Passionate about creating <span className="text-accent">impactful</span> digital solutions.
-                        </h3>
-                        <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-                            <p>
-                                I am a Full-stack developer with experience building secure and scalable web applications using the MERN stack (MongoDB, Express, React, Node.js) and Vue.js.
-                            </p>
-                            <p>
-                                I specialize in building robust backend services, integrating secure payment gateways like Razorpay, and developing dynamic, responsive user interfaces.
-                            </p>
+                        <div className="w-full aspect-[4/5] bg-black border-2 border-white shadow-[12px_12px_0px_rgba(255,255,255,0.1)] flex items-center justify-center relative group overflow-hidden">
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                            <User size={120} strokeWidth={1} className="text-white/20 group-hover:text-white/40 transition-colors" />
+                            
+                            {/* Decorative Label */}
+                            <div className="absolute top-6 left-6 bg-white text-black px-4 py-1.5 text-xs font-black uppercase tracking-widest shadow-[4px_4px_0px_rgba(255,255,255,0.2)]">
+                                FullStack Dev
+                            </div>
+                            
+                            {/* Bottom Label */}
+                            <div className="absolute bottom-6 right-6 border border-white/20 px-4 py-2 text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">
+                                Established 2025
+                            </div>
                         </div>
                     </motion.div>
 
+                    {/* Right Side: Content */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="relative"
+                        className="lg:w-2/3 flex flex-col justify-center"
                     >
-                        <div className="aspect-square bg-gradient-to-br from-accent/20 to-purple-600/20 rounded-2xl border border-white/10 flex items-center justify-center p-8">
-                            <div className="text-center">
-                                <div className="text-6xl font-black text-white mb-2">BCA</div>
-                                <p className="text-gray-400 uppercase tracking-widest font-bold">Graduate 2025</p>
-                                <div className="mt-8 grid grid-cols-2 gap-4">
-                                    <div className="p-4 bg-white/5 rounded-xl border border-white/10">
-                                        <div className="text-2xl font-bold text-accent">Intern</div>
-                                        <p className="text-xs text-gray-500 uppercase">Fugipie Tech</p>
+                        <div className="bg-black border-2 border-white p-6 sm:p-8 md:p-12 shadow-[12px_12px_0px_rgba(255,255,255,0.05)] relative">
+                            {/* Header Section */}
+                            <header className="mb-8 md:mb-10 border-b-2 border-white/10 pb-6 md:pb-8">
+                                <h2 className="text-[10px] md:text-sm font-bold tracking-[0.3em] uppercase text-accent mb-4">Discovery Phase</h2>
+                                <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tighter leading-none mb-6">
+                                    Crafting Digital <span className="text-accent underline decoration-4 underline-offset-8">Excellence</span>
+                                </h3>
+                                <p className="text-sm md:text-lg font-medium text-gray-400 leading-relaxed italic border-l-4 border-white pl-4 md:pl-6">
+                                    "I specialize in building robust backend services, integrating secure payment gateways, and developing dynamic user interfaces."
+                                </p>
+                            </header>
+
+                            {/* Detail Grid */}
+                            <div className="grid md:grid-cols-2 gap-8">
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <Code size={18} className="text-white" />
+                                        <span className="font-black uppercase text-xs tracking-widest text-white">Technical Core</span>
                                     </div>
-                                    <div className="p-4 bg-white/5 rounded-xl border border-white/10">
-                                        <div className="text-2xl font-bold text-accent">MERN</div>
-                                        <p className="text-xs text-gray-500 uppercase">Specialization</p>
+                                    <p className="text-sm font-bold text-gray-400 leading-relaxed">
+                                        Expertise in MERN stack (MongoDB, Express, React, Node.js) and Vue.js. Focused on performance, security, and scalability.
+                                    </p>
+                                </div>
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <Briefcase size={18} className="text-white" />
+                                        <span className="font-black uppercase text-xs tracking-widest text-white">Execution</span>
                                     </div>
+                                    <p className="text-sm font-bold text-gray-400 leading-relaxed">
+                                        Proven experience in integrating Razorpay, Cashfree, and managing complex database architectures with Mongoose.
+                                    </p>
                                 </div>
                             </div>
+
+                            {/* Verification Banner */}
+                            <div className="mt-12 border-2 border-white p-6 bg-white text-black flex items-center gap-6 shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
+                                <div className="w-10 h-10 bg-black text-white flex items-center justify-center shrink-0">
+                                    <Info size={20} />
+                                </div>
+                                <p className="text-[11px] font-black uppercase tracking-widest leading-snug">
+                                    Currently pursuing BCA at Safi Institute of Advanced Study · Graduation March 2025
+                                </p>
+                            </div>
                         </div>
-                        {/* Decorative elements */}
-                        <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/30 rounded-full blur-3xl" />
-                        <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-purple-600/30 rounded-full blur-3xl" />
                     </motion.div>
+
                 </div>
             </div>
         </section>

@@ -20,10 +20,10 @@ const Hero = () => {
                     <span className="inline-block py-1 px-3 rounded-full bg-white/5 border border-white/10 text-xs font-medium tracking-widest uppercase mb-6">
                         Available for new opportunities
                     </span>
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tight mb-6 leading-[1.1] text-white">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-black tracking-tight mb-6 leading-[1.1] text-white">
                         Mohammed <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400">Salih.k</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                    <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed font-light px-4">
                         MERN Stack Developer building secure, scalable, and visually stunning web experiences.
                     </p>
                 </motion.div>
