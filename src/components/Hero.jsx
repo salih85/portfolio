@@ -32,12 +32,12 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="flex flex-wrap justify-center gap-4 mb-12"
+                    className="flex flex-wrap justify-center gap-6 mb-12"
                 >
-                    <a href="#projects" className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-accent hover:text-white transition-all duration-300 flex items-center gap-2">
+                    <a href="#projects" className="px-10 py-5 bg-white text-black font-black uppercase tracking-widest border-2 border-black hover:bg-black hover:text-white hover:border-white transition-all shadow-[6px_6px_0px_rgba(255,255,255,0.2)] flex items-center gap-3 active:translate-x-1 active:translate-y-1 active:shadow-none">
                         View Projects <ArrowRight size={20} />
                     </a>
-                    <a href="#contact" className="px-8 py-4 bg-white/5 border border-white/10 font-bold rounded-full hover:bg-white/10 transition-all duration-300">
+                    <a href="#contact" className="px-10 py-5 bg-black border-2 border-white text-white font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all shadow-[6px_6px_0px_rgba(255,255,255,0.1)] active:translate-x-1 active:translate-y-1 active:shadow-none">
                         Contact Me
                     </a>
                 </motion.div>

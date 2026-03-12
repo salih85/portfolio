@@ -36,20 +36,19 @@ const Education = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
-                            className="group bg-white border-2 border-black p-8 hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200"
-                            style={{ boxShadow: '8px 8px 0px rgba(255, 255, 255, 0.1), 8px 8px 0px rgba(0, 0, 0, 1)' }}
+                            className="group bg-black border-2 border-white p-8 hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 shadow-[8px_8px_0px_rgba(255,255,255,0.1)] hover:shadow-[8px_8px_0px_rgba(255,255,255,0.3)]"
                         >
                             <div className="flex items-start gap-6">
-                                <div className="w-14 h-14 bg-white border-2 border-black flex items-center justify-center text-black shadow-[4px_4px_0px_rgba(0,0,0,1)] flex-shrink-0 group-hover:bg-black group-hover:text-white transition-colors">
+                                <div className="w-14 h-14 bg-black border-2 border-white flex items-center justify-center text-white shadow-[4px_4px_0px_rgba(255,255,255,0.1)] flex-shrink-0 group-hover:bg-white group-hover:text-black transition-colors">
                                     {edu.icon}
                                 </div>
-                                <div>
-                                    <h4 className="text-2xl font-black text-black leading-tight mb-2 uppercase tracking-tight">{edu.degree}</h4>
-                                    <p className="text-gray-900 font-bold mb-1">{edu.institution}</p>
-                                    <div className="inline-block bg-black text-white px-3 py-1 text-xs font-bold uppercase tracking-widest mb-4">
+                                <div className="space-y-4">
+                                    <h4 className="text-2xl font-black text-white leading-tight uppercase tracking-tight group-hover:text-accent transition-colors">{edu.degree}</h4>
+                                    <p className="text-gray-400 font-bold mb-1">{edu.institution}</p>
+                                    <div className="inline-block bg-white text-black px-3 py-1 text-xs font-bold uppercase tracking-widest">
                                         {edu.period}
                                     </div>
-                                    <p className="text-gray-600 font-medium text-sm leading-relaxed">
+                                    <p className="text-gray-500 font-medium text-sm leading-relaxed">
                                         {edu.details}
                                     </p>
                                 </div>

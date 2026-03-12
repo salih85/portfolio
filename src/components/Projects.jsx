@@ -48,15 +48,15 @@ const Projects = () => {
     ]
 
     return (
-        <section id="projects" className="py-24 bg-black/50">
+        <section id="projects" className="py-24 bg-black">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 text-center md:text-left">
                     <div>
                         <h2 className="text-sm font-bold tracking-widest uppercase text-accent mb-4">Portfolio Archive</h2>
                         <h3 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter">Project Contributions</h3>
                     </div>
-                    <a href="https://github.com/salih85" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 font-black uppercase tracking-widest border-2 border-black shadow-[6px_6px_0px_rgba(255,255,255,0.1)] hover:shadow-[6px_6px_0px_rgba(255,255,255,0.5)] transition-all">
-                        GitHub <ArrowUpRight size={20} />
+                    <a href="https://github.com/salih85" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 font-black uppercase tracking-widest border-2 border-black hover:bg-black hover:text-white hover:border-white transition-all shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
+                        View GitHub <ArrowUpRight size={20} />
                     </a>
                 </div>
 
@@ -69,25 +69,24 @@ const Projects = () => {
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                             onClick={() => setSelectedProject(project)}
-                            className="group bg-white border-2 border-black p-8 hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 cursor-pointer text-black"
-                            style={{ boxShadow: '8px 8px 0px rgba(255, 255, 255, 0.1), 8px 8px 0px rgba(0, 0, 0, 1)' }}
+                            className="group bg-black border-2 border-white p-8 hover:transform hover:-translate-x-1 hover:-translate-y-1 transition-all duration-200 cursor-pointer text-white shadow-[8px_8px_0px_rgba(255,255,255,0.1)] hover:shadow-[8px_8px_0px_rgba(255,255,255,0.3)]"
                         >
-                            <div className="w-14 h-14 bg-white border-2 border-black flex items-center justify-center mb-8 shadow-[4px_4px_0px_rgba(0,0,0,1)] group-hover:bg-black group-hover:text-white transition-colors">
+                            <div className="w-14 h-14 bg-black border-2 border-white flex items-center justify-center mb-8 shadow-[4px_4px_0px_rgba(255,255,255,0.1)] group-hover:bg-white group-hover:text-black transition-colors">
                                 {project.icon}
                             </div>
                             
                             <div className="space-y-4">
-                               <h4 className="text-2xl font-black uppercase tracking-tight leading-tight group-hover:underline">
+                               <h4 className="text-2xl font-black uppercase tracking-tight leading-tight group-hover:underline group-hover:text-accent">
                                  {project.title}
                                </h4>
-                               <p className="text-gray-600 font-bold text-sm tracking-tight leading-relaxed line-clamp-2">
+                               <p className="text-gray-400 font-bold text-sm tracking-tight leading-relaxed line-clamp-2">
                                  {project.description}
                                </p>
                             </div>
 
-                            <div className="mt-8 pt-8 border-t-2 border-black flex items-center justify-between">
-                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500">Case Study</span>
-                                <div className="w-8 h-8 border-2 border-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-colors">
+                            <div className="mt-8 pt-8 border-t-2 border-white/20 flex items-center justify-between">
+                                <span className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 group-hover:text-white transition-colors">View Case Study</span>
+                                <div className="w-8 h-8 border-2 border-white flex items-center justify-center group-hover:bg-white group-hover:text-black transition-colors">
                                     <ArrowUpRight size={16} />
                                 </div>
                             </div>
