@@ -82,7 +82,7 @@ const ProjectModal = ({ project, onClose }) => {
               </div>
 
 
-              {/* About Section */}
+
               <section>
                 <h3 className="text-2xl font-black uppercase tracking-tight mb-8 border-b-4 border-white inline-block pb-1 font-mono">About the Project</h3>
                 <div className="space-y-6 text-lg font-medium text-gray-400 leading-relaxed italic border-l-4 border-white/20 pl-8">
@@ -148,7 +148,7 @@ const ProjectModal = ({ project, onClose }) => {
                 </section>
               </div>
 
-              {/* Action Buttons */}
+
               <div className="flex flex-col sm:flex-row gap-4 pt-12">
                 <a 
                   href={project.github} 
