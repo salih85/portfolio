@@ -63,6 +63,7 @@ const ProjectModal = ({ project, onClose }) => {
             </div>
           </header>
 
+
           <main className="px-6 py-12 md:px-12 md:py-16">
             <div className="max-w-4xl mx-auto space-y-16">
               
