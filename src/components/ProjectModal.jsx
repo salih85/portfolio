@@ -67,6 +67,7 @@ const ProjectModal = ({ project, onClose }) => {
           <main className="px-6 py-12 md:px-12 md:py-16">
             <div className="max-w-4xl mx-auto space-y-16">
               
+              
               {/* Contribution Banner */}
               <div className="border-2 border-white p-4 sm:p-6 md:p-8 bg-white text-black shadow-[6px_6px_0px_rgba(255,255,255,0.1)] flex items-start gap-4 sm:gap-6">
                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-black text-white border-2 border-white flex items-center justify-center flex-shrink-0 shadow-[2px_2px_0px_rgba(0,0,0,1)]">
