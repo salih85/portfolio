@@ -8,7 +8,7 @@ const Education = () => {
             degree: "Bachelor of Computer Application (BCA)",
             institution: "Safi Institute of Advanced Study",
             period: "Graduation: March 2025",
-            details: "CGPA: 7.76/10",
+            
             icon: <GraduationCap size={24} />
         },
         {
