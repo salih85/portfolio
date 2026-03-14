@@ -81,26 +81,8 @@ const ProjectModal = ({ project, onClose }) => {
               <hr className="border-t-2 border-dashed border-white/10" />
 
               {/* Grid Content */}
-              <div className="grid md:grid-cols-2 gap-12">
+              <div className="flex flex-col gap-12">
                 
-                {/* Team Section */}
-                <section>
-                  <h3 className="text-xl font-black uppercase tracking-tight mb-8 border-b-4 border-white inline-block pb-1">The Team</h3>
-                  <div className="space-y-4">
-                    {(project.team || [{name: "Salih", role: "Full Stack Developer", initials: "S"}]).map((member) => (
-                      <div key={member.name} className="border-2 border-white bg-white/5 p-5 flex items-center gap-4 shadow-[4px_4px_0px_rgba(255,255,255,0.1)] hover:transform hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
-                        <div className="w-12 h-12 bg-white text-black flex items-center justify-center font-black text-xs">
-                          {member.initials}
-                        </div>
-                        <div>
-                          <p className="font-black uppercase text-sm">{member.name}</p>
-                          <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest leading-none mt-1">{member.role}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </section>
-
                 {/* Tech Stack */}
                 <section>
                   <h3 className="text-xl font-black uppercase tracking-tight mb-8 border-b-4 border-white inline-block pb-1">Tech Stack</h3>

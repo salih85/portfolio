@@ -10,11 +10,13 @@ const Experience = () => {
             period: "December 2025 – March 2026",
             description: "Core member of the backend development team, focused on building secure and high-performance web applications using the MERN stack.",
             points: [
-                "Developed secure authentication using JWT and bcryptjs.",
+                "Developed secure authentication and authorization using JWT and bcryptjs.",
                 "Designed and optimized MongoDB schemas using Mongoose.",
-                "Built scalable backend services with Node.js and Express.js Following MVC.",
-                "Integrated Razorpay and Cashfree for secure payment processing.",
-                "Improved SEO and performance using server-side rendering with EJS."
+                "Built scalable backend services with Node.js and Express.js following MVC and REST standards.",
+                "Integrated Razorpay and Cashfree for secure payment processing, implementing webhook-based transaction validation.",
+                "Improved SEO and performance using server-side rendering with EJS.",
+                "Developed responsive UI components using React.js and Vue.js.",
+                "Collaborated using Git and GitHub for version control and code reviews."
             ]
         }
     ]
@@ -23,7 +25,7 @@ const Experience = () => {
         <section id="experience" className="py-24 bg-black border-t-2 border-white/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-20">
-                    <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-accent mb-4">Professional Trajectory</h2>
+                    <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-accent mb-4">My Experience</h2>
                     <h3 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none mb-4">
                         Work <span className="text-accent underline decoration-4 underline-offset-8">History</span>
                     </h3>

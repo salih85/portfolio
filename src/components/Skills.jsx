@@ -5,24 +5,24 @@ import { Layout, Server, Database, Globe, Code } from 'lucide-react'
 const Skills = () => {
     const categories = [
         {
-            title: "Frontend Development",
+            title: "Programming",
+            icon: <Code size={24} />,
+            skills: ["JavaScript", "HTML", "CSS"]
+        },
+        {
+            title: "Frontend",
             icon: <Layout size={24} />,
             skills: ["React.js", "Vue.js", "Tailwind CSS", "Bootstrap", "EJS"]
         },
         {
-            title: "Backend Services",
+            title: "Backend",
             icon: <Server size={24} />,
-            skills: ["Node.js", "Express.js", "JWT", "WebSocket", "REST APIs"]
+            skills: ["Node.js", "Express.js", "REST APIs", "JWT Auth"]
         },
         {
-            title: "Data Architecture",
+            title: "WebSockets & DB",
             icon: <Database size={24} />,
-            skills: ["MongoDB", "Mongoose", "Caching", "Persistence"]
-        },
-        {
-            title: "Tools & Protocols",
-            icon: <Globe size={24} />,
-            skills: ["Git", "GitHub", "Yjs", "WebRTC", "Google OAuth"]
+            skills: ["MongoDB", "WebSockets", "Socket.IO"]
         }
     ]
 

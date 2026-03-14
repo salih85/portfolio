@@ -43,12 +43,12 @@ const About = () => {
                         <div className="bg-black border-2 border-white p-6 sm:p-8 md:p-12 shadow-[12px_12px_0px_rgba(255,255,255,0.05)] relative">
                             {/* Header Section */}
                             <header className="mb-8 md:mb-10 border-b-2 border-white/10 pb-6 md:pb-8">
-                                <h2 className="text-[10px] md:text-sm font-bold tracking-[0.3em] uppercase text-accent mb-4">Discovery Phase</h2>
+                                <h2 className="text-[10px] md:text-sm font-bold tracking-[0.3em] uppercase text-accent mb-4">Summary</h2>
                                 <h3 className="text-3xl sm:text-4xl md:text-5xl font-black text-white uppercase tracking-tighter leading-none mb-6">
-                                    Crafting Digital <span className="text-accent underline decoration-4 underline-offset-8">Excellence</span>
+                                    MERN Stack <span className="text-accent underline decoration-4 underline-offset-8">Developer</span>
                                 </h3>
                                 <p className="text-sm md:text-lg font-medium text-gray-400 leading-relaxed italic border-l-4 border-white pl-4 md:pl-6">
-                                    "I specialize in building robust backend services, integrating secure payment gateways, and developing dynamic user interfaces."
+                                    "Full-stack developer with experience building secure and scalable web applications using JavaScript, Node.js, Express, MongoDB, React, and Vue.js."
                                 </p>
                             </header>
 
@@ -60,7 +60,7 @@ const About = () => {
                                         <span className="font-black uppercase text-xs tracking-widest text-white">Technical Core</span>
                                     </div>
                                     <p className="text-sm font-bold text-gray-400 leading-relaxed">
-                                        Expertise in MERN stack (MongoDB, Express, React, Node.js) and Vue.js. Focused on performance, security, and scalability.
+                                        Skilled in authentication, payment gateway integration, and RESTful APIs.
                                     </p>
                                 </div>
                                 <div className="space-y-4">
@@ -69,10 +69,11 @@ const About = () => {
                                         <span className="font-black uppercase text-xs tracking-widest text-white">Execution</span>
                                     </div>
                                     <p className="text-sm font-bold text-gray-400 leading-relaxed">
-                                        Proven experience in integrating Razorpay, Cashfree, and managing complex database architectures with Mongoose.
+                                        Enjoys writing clean code, solving real-world problems, and working in team-based environments while continuously learning new technologies.
                                     </p>
                                 </div>
                             </div>
+
 
                         </div>
                     </motion.div>

@@ -52,7 +52,7 @@ const Projects = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 text-center md:text-left">
                     <div>
-                        <h2 className="text-sm font-bold tracking-widest uppercase text-accent mb-4">Portfolio Archive</h2>
+                        <h2 className="text-sm font-bold tracking-widest uppercase text-accent mb-4">My Projects</h2>
                         <h3 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter">Project Contributions</h3>
                     </div>
                     <a href="https://github.com/salih85" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 font-black uppercase tracking-widest border-2 border-black hover:bg-black hover:text-white hover:border-white transition-all shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">

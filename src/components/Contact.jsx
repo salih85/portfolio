@@ -43,7 +43,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-accent mb-6">Contact Protocol</h2>
+                        <h2 className="text-sm font-bold tracking-[0.3em] uppercase text-accent mb-6">Get In Touch</h2>
                         <h3 className="text-5xl md:text-6xl font-black text-white uppercase tracking-tighter leading-[0.9] mb-12">
                             Launch A <span className="text-accent">Project</span> Together.
                         </h3>
