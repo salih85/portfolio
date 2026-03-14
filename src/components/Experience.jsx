@@ -57,10 +57,7 @@ const Experience = () => {
 
                                 {/* Right Side: Details */}
                                 <div className="lg:w-2/3 border-l-2 border-white/10 lg:pl-12">
-                                    <h5 className="font-black uppercase text-xs tracking-widest text-white/40 mb-6 flex items-center gap-3">
-                                        <Info size={14} /> Project Brief & Contributions
-                                    </h5>
-                                    
+
                                     <p className="text-lg font-medium text-gray-300 italic mb-8 leading-relaxed border-b border-white/10 pb-8">
                                         "{exp.description}"
                                     </p>
@@ -78,17 +75,7 @@ const Experience = () => {
                                 </div>
                             </div>
 
-                            {/* Verification Footer */}
-                            <div className="mt-12 pt-8 border-t-2 border-dashed border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                                <div className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-white/60">
-                                    <Briefcase size={14} /> Verification: Proof of internship available on request
-                                </div>
-                                <div className="flex gap-3">
-                                     <span className="w-2 h-2 bg-white/20 rounded-full"></span>
-                                     <span className="w-2 h-2 bg-white/20 rounded-full"></span>
-                                     <span className="w-2 h-2 bg-white rounded-full"></span>
-                                </div>
-                            </div>
+
                         </motion.div>
                     ))}
                 </div>

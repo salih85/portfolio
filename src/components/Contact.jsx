@@ -75,13 +75,6 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        {/* Security Note */}
-                        <div className="mt-12 border-2 border-white/10 p-4 sm:p-6 bg-white/5 flex items-center gap-4 sm:gap-6">
-                           <Info size={20} className="text-accent shrink-0" />
-                           <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest leading-relaxed">
-                             Secure Communication Active. Your message will be sent directly to my primary email.
-                           </p>
-                        </div>
                     </motion.div>
 
                     {/* Right Side: Contact Form */}

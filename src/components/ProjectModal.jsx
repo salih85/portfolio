@@ -68,19 +68,6 @@ const ProjectModal = ({ project, onClose }) => {
             <div className="max-w-4xl mx-auto space-y-16">
               
 
-              {/* Contribution Banner */}
-              <div className="border-2 border-white p-4 sm:p-6 md:p-8 bg-white text-black shadow-[6px_6px_0px_rgba(255,255,255,0.1)] flex items-start gap-4 sm:gap-6">
-                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-black text-white border-2 border-white flex items-center justify-center flex-shrink-0 shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-                   <Info size={20} />
-                 </div>
-                 <div>
-                   <h4 className="font-black uppercase text-[10px] sm:text-xs tracking-widest mb-1">Project Details & Contributions</h4>
-                   <p className="text-gray-900 text-[11px] sm:text-sm font-bold leading-relaxed">
-                     Built as a robust, production-ready solution. Technical architecture and proprietary logic are protected under client confidentiality.
-                   </p>
-                 </div>
-              </div>
-
 
 
               <section>

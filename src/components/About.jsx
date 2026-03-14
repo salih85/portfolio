@@ -74,15 +74,6 @@ const About = () => {
                                 </div>
                             </div>
 
-                            {/* Verification Banner */}
-                            <div className="mt-12 border-2 border-white p-6 bg-white text-black flex items-center gap-6 shadow-[6px_6px_0px_rgba(255,255,255,0.2)]">
-                                <div className="w-10 h-10 bg-black text-white flex items-center justify-center shrink-0">
-                                    <Info size={20} />
-                                </div>
-                                <p className="text-[11px] font-black uppercase tracking-widest leading-snug">
-                                    Currently pursuing BCA at Safi Institute of Advanced Study · Graduation March 2025
-                                </p>
-                            </div>
                         </div>
                     </motion.div>
 
